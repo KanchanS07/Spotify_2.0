@@ -1,0 +1,27 @@
+.bg-gray-left{
+    background-color: #121212
+}
+.bg-gray-right{
+    background-color: #101010;
+}
+.margin{
+    margin: 10px;
+}
+.flex{
+    display: flex;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.bg-black{
+    background-color: black;
+}
+.invert{
+filter: invert();
+}
+.cursor{
+    cursor: pointer;
+}

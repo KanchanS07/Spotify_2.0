@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <link
+      rel="icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+    />
+  </head>
+  <body>
+    <!-- left-box -->
+    <div class="left">
+      <img class="close" src="img/close.svg" alt="">
+      <!-- spotify content -->
+      <div class="spotify flex bg-gray-left cursor">
+        <!-- logo -->
+        <div class="logo">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <!-- home -->
+        <div class="home flex cursor">
+          <img src="img/home.svg" alt="" />
+          <p>Home</p>
+        </div>
+        <!-- search -->
+        <div class="search flex cursor">
+          <img src="img/search.svg" alt="" />
+          <p>Search</p>
+        </div>
+      </div>
+      <!-- library content -->
+      <div class="your-library bg-gray-left">
+        <div class="library flex">
+          <img src="img/library.svg" alt="" />
+          <p>Your Library</p>
+        </div>
+        <div class="song-list cursor">
+          <ul class="flex cursor">
+            <!-- <li> -->
+            <!-- <img  class="invert" src="music.svg" alt=""> -->
+            <!-- <div class="song-info"> -->
+            <!-- <div></div> -->
+            <!-- </div> -->
+            <!-- <div class="playnow"> -->
+            <!-- <span>Play Now</span> -->
+            <!-- <img  id="playButton" src="playButton.svg" alt=""> -->
+            <!-- </div> -->
+            <!-- </li> -->
+          </ul>
+        </div>
+
+        <!-- footer -->
+        <div class="footer flex">
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/legal/">
+              <span>Legal</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+              <span>Safety & Privacy Center</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+              <span>About Ads</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a href="https://www.spotify.com/in-en/accessibility/">
+              <span>Accessibility</span>
+            </a>
+          </div>
+          <div class="footer-items">
+            <a
+              href="https://www.spotify.com/legal/cookies-policy/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Cookies</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- right box -->
+    <div class="right bg-gray-right">
+      <!-- nav --->
+      <div class="nav flex">
+        <!--arrows --- -->
+        <div class="arrows flex">
+          <img class="hamBurger" src="img/hamBurger.svg" alt="" />
+          <img src="img/leftArrow.svg" alt="" />
+          <img src="img/rightArrow.svg" alt="" />
+        </div>
+        <!-- signup --- login  -->
+        <div class="buttons flex">
+          <button class="signup">Sign up</button>
+          <button class="login">Log in</button>
+        </div>
+      </div>
+      <!-- playlist -->
+       <div class="playlist ">
+        <h2>Spotify Playlists</h2>
+      <div class="spotify-playlist">
+        
+        <div class="cards">
+         <!-- dynamic code loaded after server call , all cards will load     -->
+        </div>
+      </div>
+      </div>
+      <!-- playbar -->
+      <div class="playbar">
+        <!-- seekbar -->
+        <div class="belowBar">
+          <div class="songInfo"></div>
+          <!-- playbar buttons -->
+          <div class="playbarButtons">
+            <img class="cursor" id="prev" src="img/prevButton.svg" alt="" />
+            <img class="cursor" id="play" src="img/playButton.svg" alt="" />
+            <img class="cursor" id="next" src="img/nextButton.svg" alt="" />
+          </div>
+          <div class="volTime flex">
+            <div class="volRange flex">
+              <img class="invert" id="volume" src="img/volume.svg" alt="" />
+              <input
+                type="range"
+                id="range"
+                background-color="red"
+                class="cursor"
+              />
+            </div>
+            <div class="songtime"></div>
+          </div>
+        </div>
+        <div class="cursor seekbar">
+          <div class="cursor seekbar-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
