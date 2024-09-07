@@ -43,7 +43,7 @@ function extractSongName(url) {
 // Path to your songs folder
 async function getSongs(folder) {
   currFolder = folder;
-  const response = await fetch(`http://127.0.0.1:3000/${currFolder}/`);
+  const response = await fetch(`${currFolder}/`);
   const res = await response.text();
 
   let div = document.createElement("div");
@@ -93,7 +93,7 @@ async function getSongs(folder) {
 }
 
 async function displayAlbums() {
-  const response = await fetch("http://127.0.0.1:3000/Songs/");
+  const response = await fetch("/Songs/");
   const res = await response.text();
   let div = document.createElement("div");
   div.innerHTML = res;
@@ -103,7 +103,7 @@ async function displayAlbums() {
   for (let i = 0; i < array.length; i++) {
     if (array[i].href.includes("/Songs/")) {
       let folder = array[i].href.split("/").splice(-2)[0];
-      const a = await fetch(`http://127.0.0.1:3000/Songs/${folder}/info.json`);
+      const a = await fetch(`/Songs/${folder}/info.json`);
       const albumInfo = await a.json();
       cardContainer.innerHTML =
         cardContainer.innerHTML +
